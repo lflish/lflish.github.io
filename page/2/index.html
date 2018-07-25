@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python, Web" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Python Backend Developer.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pyclearl">
+<meta property="og:url" content="http://pyclear.me/page/2/index.html">
+<meta property="og:site_name" content="Pyclearl">
+<meta property="og:description" content="Python Backend Developer.">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pyclearl">
+<meta name="twitter:description" content="Python Backend Developer.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pyclear.me/page/2/"/>
+
+
+
+
+
+  <title>Pyclearl</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-91611718-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Pyclearl</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">When in doubt, use brute force.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2018/05/12/python3unkown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/12/python3unkown/" itemprop="url">不知道的Python3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-12T22:20:13+08:00">
+                2018-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>下面这几个是我日常基本没使用过的特性。<br>从这里挑的<a href="&#39;https://zhuanlan.zhihu.com/p/36580468&#39;">内容来自</a></p>
+<h2 id="高级解包"><a href="#高级解包" class="headerlink" title="高级解包"></a>高级解包</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># in python2</span><br><span class="line">In [2]: a, b = 1, 2</span><br><span class="line"></span><br><span class="line">In [3]: a, b = b, a</span><br><span class="line"></span><br><span class="line"># now in python3</span><br><span class="line">In [4]: a, b, *rest = range(10)</span><br><span class="line"></span><br><span class="line">In [5]: print(a)</span><br><span class="line">0</span><br><span class="line"></span><br><span class="line">In [6]: print(b)</span><br><span class="line">1</span><br><span class="line"></span><br><span class="line">In [7]: print(rest)</span><br><span class="line">[2, 3, 4, 5, 6, 7, 8, 9]</span><br><span class="line"></span><br><span class="line">In [8]: a, *rest, b = range(10)</span><br><span class="line"></span><br><span class="line">In [9]: print(a)</span><br><span class="line">0</span><br><span class="line"></span><br><span class="line">In [10]: print(rest)</span><br><span class="line">[1, 2, 3, 4, 5, 6, 7, 8]</span><br><span class="line"></span><br><span class="line">In [11]: print(b)</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
+<h2 id="强制关键词参数"><a href="#强制关键词参数" class="headerlink" title="强制关键词参数"></a>强制关键词参数</h2><p>如果不想用*args收集多余参数你可能这么写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">In [14]: def mysum(a, b, biteme=False):</span><br><span class="line">    ...:     if biteme:</span><br><span class="line">    ...:         print(&apos;一键删库&apos;)</span><br><span class="line">    ...:     else:</span><br><span class="line">    ...:         return a + b</span><br><span class="line">    ...:</span><br><span class="line"></span><br><span class="line">In [15]: mysum(1,2)</span><br><span class="line">Out[15]: 3</span><br><span class="line"></span><br><span class="line">In [16]: mysum(1,2,3) # if this is delete DB?</span><br><span class="line">一键删库</span><br><span class="line"></span><br><span class="line">In [18]: def mysum(a, b, *, biteme=False):</span><br><span class="line">    ...:     if biteme:</span><br><span class="line">    ...:         print(&apos;一键删库&apos;)</span><br><span class="line">    ...:     else:</span><br><span class="line">    ...:         return a + b</span><br><span class="line">    ...:</span><br><span class="line"></span><br><span class="line">In [19]: mysum(1,2,3) # now raise TypeError</span><br><span class="line">---------------------------------------------------------------------------</span><br><span class="line">TypeError                                 Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input-19-eb8c192f30fb&gt; in &lt;module&gt;()</span><br><span class="line">----&gt; 1 mysum(1,2,3)</span><br><span class="line"></span><br><span class="line">TypeError: mysum() takes 2 positional arguments but 3 were given</span><br></pre></td></tr></table></figure></p>
+<h2 id="新的标准库"><a href="#新的标准库" class="headerlink" title="新的标准库"></a>新的标准库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">In [22]: import ipaddress</span><br><span class="line"></span><br><span class="line">In [23]: print(ipaddress.ip_address(&apos;192.168.0.1&apos;))</span><br><span class="line">    ...: print(ipaddress.ip_address(&apos;2001:db8::&apos;))</span><br><span class="line">    ...:</span><br><span class="line">192.168.0.1</span><br><span class="line">2001:db8::</span><br><span class="line"></span><br><span class="line">In [24]: from functools import lru_cache</span><br><span class="line">    ...: from urllib.error import HTTPError</span><br><span class="line">    ...: import urllib.request</span><br><span class="line">    ...:</span><br><span class="line"></span><br><span class="line">In [25]: @lru_cache(maxsize=32)</span><br><span class="line">    ...: def get_pep(num):</span><br><span class="line">    ...:     &apos;Retrieve text of a Python Enhancement Proposal&apos;</span><br><span class="line">    ...:     resource = &apos;http://www.python.org/dev/peps/pep-%04d/&apos; % num</span><br><span class="line">    ...:     try:</span><br><span class="line">    ...:         with urllib.request.urlopen(resource) as s:</span><br><span class="line">    ...:             return s.read()</span><br><span class="line">    ...:     except HTTPError:</span><br><span class="line">    ...:         return &apos;Not Found&apos;</span><br><span class="line">    ...:</span><br></pre></td></tr></table></figure>
+<h2 id="pahtlib"><a href="#pahtlib" class="headerlink" title="pahtlib"></a>pahtlib</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from pathlib import Path</span><br><span class="line"></span><br><span class="line">directory = Path(&quot;/etc&quot;)</span><br><span class="line">filepath = directory / &quot;hosts&quot;</span><br><span class="line"></span><br><span class="line">if filepath.exists():</span><br><span class="line">    print(&apos;hosts exist&apos;)</span><br></pre></td></tr></table></figure>
+<p>这个比通常用os库做的优雅多了。。特别是filepath这句特别黑魔法</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2018/04/18/tornado-run-blocking-function/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/18/tornado-run-blocking-function/" itemprop="url">Tornado执行阻塞函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-18T09:32:17+08:00">
+                2018-04-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="使用Tornado时执行阻塞函数的姿势"><a href="#使用Tornado时执行阻塞函数的姿势" class="headerlink" title="使用Tornado时执行阻塞函数的姿势"></a>使用Tornado时执行阻塞函数的姿势</h2><p>很多人使用Tornado的姿势其实都是不对的，很多人都是知乎style地使用Tornado，当然这话是大佬说的。<br>我脑补了下才反应过来什么叫知乎style，其实就指用Tornado，但是代码里却很多阻塞的。Tornado的文档<br>guide里异步和非阻塞I/O节第二段就说了：<br><code>为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式。
+这就意味着所有的应用代码都应该是异步非阻塞的, 因为在同一时间只有一个操作是有效的.</code><br>敲黑板了，这是官方原话，所以这就是正确的使用Tornado的姿势没跑了。</p>
+<h2 id="所以有以下的操作让耗时的阻塞操作变异步的方式"><a href="#所以有以下的操作让耗时的阻塞操作变异步的方式" class="headerlink" title="所以有以下的操作让耗时的阻塞操作变异步的方式"></a>所以有以下的操作让耗时的阻塞操作变异步的方式</h2><p>董伟明大佬的博文<a href="http://www.dongwm.com/archives/shi-yong-tornadorang-ni-de-qing-qiu-yi-bu-fei-zu-sai/" target="_blank" rel="noopener">使用tornado让你的请求异步非阻塞</a><br>说了我知道的和不知道的方式，欢迎补充。</p>
+<h2 id="官方的做法是？"><a href="#官方的做法是？" class="headerlink" title="官方的做法是？"></a>官方的做法是？</h2><p>我想改变公司的知乎style代码，就去啃了下文档，才有了这篇文章的由来，在翻最新的5.x版本文档里，我想起了以前有些卡时间的操作都<br>用了<code>run_on_exexutor</code>于是就翻到这个函数的文档，然后发现文档里多了句这个<code>In general, using run_in_executor 
+when calling a blocking method is recommended instead of using this decorator when defining a method.</code><br>什么时候出现的难道是我以前看英文没认真。于是搜了下这个函数在<a href="http://www.tornadoweb.org/en/stable/guide/coroutines.html#calling-blocking-functions" target="_blank" rel="noopener">这里</a><br>在文档里看到了这个示例:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@gen.coroutine</span><br><span class="line">def call_blocking():</span><br><span class="line">    yield IOLoop.current().run_in_executor(blocking_func, args)</span><br></pre></td></tr></table></figure>
+<p>然后跟一个大佬分享了，大佬说那这个blocking_func是任意的都可以么，于是带着这个疑问我再翻了下文档，<br>点过去看到了这个函数的声明与注释，原来是5.0新加的。<code>Runs a function in a concurrent.futures.Executor</code> 看<br>到concurrent你们会想到啥，反正我脑子里冒出了ThreadPool和ProcessPool。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">def run_in_executor(self, executor, func, *args):</span><br><span class="line">      &quot;&quot;&quot;Runs a function in a ``concurrent.futures.Executor``. If</span><br><span class="line">      ``executor`` is ``None``, the IO loop&apos;s default executor will be used.</span><br><span class="line"></span><br><span class="line">      Use `functools.partial` to pass keyword arguments to ``func``.</span><br><span class="line"></span><br><span class="line">      .. versionadded:: 5.0</span><br><span class="line">      &quot;&quot;&quot;</span><br><span class="line">      if ThreadPoolExecutor is None:</span><br><span class="line">          raise RuntimeError(</span><br><span class="line">              &quot;concurrent.futures is required to use IOLoop.run_in_executor&quot;)</span><br><span class="line"></span><br><span class="line">      if executor is None:</span><br><span class="line">          if not hasattr(self, &apos;_executor&apos;):</span><br><span class="line">              from tornado.process import cpu_count</span><br><span class="line">              self._executor = ThreadPoolExecutor(max_workers=(cpu_count() * 5))</span><br><span class="line">          executor = self._executor</span><br><span class="line">      c_future = executor.submit(func, *args)</span><br><span class="line">      # Concurrent Futures are not usable with await. Wrap this in a</span><br><span class="line">      # Tornado Future instead, using self.add_future for thread-safety.</span><br><span class="line">      t_future = Future()</span><br><span class="line">      self.add_future(c_future, lambda f: chain_future(f, t_future))</span><br><span class="line">      return t_future</span><br></pre></td></tr></table></figure></p>
+<p>源码如上, 清晰明了，官方也是简单粗暴，耗时的我再开个线程池来处理就好了。<br>以后如果阻塞的函数都可以用这个run_in_executor了。这样你的代码就能用正确的姿势<br>跑在Tornado框架里了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2018/04/17/centos-share-net/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/17/centos-share-net/" itemprop="url">阿里云CentOS内网机器利用iptables共享公网IP上网</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-17T11:32:17+08:00">
+                2018-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>公司有个业务是2B的以及日活不大，所以两台服务器搞定,一个6M EIP。两台机器都是CentOS7系统<br>EIP为 xxx.xxx.xxx.xxx绑在 内网ip为 172.18.30.175的服务器上，内网机器的内网ip为 172.18.30.176。<br>现在有个问题，更新软件的时候可以将EIP解绑然后重绑在内网机器上。但是每次都这样搞太麻烦了。于是想到了iptables桥接上网。</p>
+<p>搜了下，来源于网络。不知道出处。所以不署名了。</p>
+<h3 id="在带外网的机器上设置iptables规则："><a href="#在带外网的机器上设置iptables规则：" class="headerlink" title="在带外网的机器上设置iptables规则："></a>在带外网的机器上设置iptables规则：</h3><p>   <code>iptables -t nat -A POSTROUTING -s 172.18.30.176 -j SNAT --to 172.18.30.175</code><br>    // 如果想让整个内网的机器全部上网，只需要把 -s 172.18.30.176 换成<br>    <code>-s 172.18.30.0/255.255.255.0</code> 即可</p>
+<h3 id="在带外网机器上打开转发"><a href="#在带外网机器上打开转发" class="headerlink" title="在带外网机器上打开转发"></a>在带外网机器上打开转发</h3><p>   首先查看是否已经打开<br>   <code>sysctl -a |grep &#39;net.ipv4.ip_forward&#39;</code><br>如果值为1，则说明已经打开，否则需要修改配置文件 /etc/sysctl.conf<br>打开该配置文件，找到该参数，使其变为<br><code>net.ipv4.ip_forward = 1</code><br>然后运行 <code>sysctl -p</code></p>
+<h3 id="在内网机器上，设置其网关为-172-18-30-175"><a href="#在内网机器上，设置其网关为-172-18-30-175" class="headerlink" title="在内网机器上，设置其网关为 172.18.30.175"></a>在内网机器上，设置其网关为 172.18.30.175</h3><p><code>vim  /etc/sysconfig/network-scripts/ifcfg-eth0</code><br>添加<br><code>GATEWAY=172.18.30.175</code><br>重启网络服务即可。 <code>service network restart</code></p>
+<h3 id="测试内网机器是否可以上网。"><a href="#测试内网机器是否可以上网。" class="headerlink" title="测试内网机器是否可以上网。"></a>测试内网机器是否可以上网。</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2018/01/10/aioredis_tornado/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/10/aioredis_tornado/" itemprop="url">aioredis with tornado</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T15:30:17+08:00">
+                2018-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>今天尝试了下, 把aioredis用上, 由于aioredis是基于asyncio的, 所以在tornado里需要把loop<br>换成asyncio, 整体觉得还是蛮别扭的。有个aredis是国内bilibili的工程师写的, 感觉应该使用<br>起来会更自然点。<br>主体代码如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">import tornado.web</span><br><span class="line">import asyncio</span><br><span class="line">from tornado.platform.asyncio import AsyncIOMainLoop</span><br><span class="line"></span><br><span class="line">class Application(tornado.web.Application):</span><br><span class="line">    def init_with_loop(self, loop):</span><br><span class="line">        self.redis = loop.run_until_complete(</span><br><span class="line">            aioredis.create_redis(</span><br><span class="line">                 (&apos;localhost&apos;, 6379),</span><br><span class="line">                 loop=loop)</span><br><span class="line">        )</span><br><span class="line">app = Application(param) # your param</span><br><span class="line">loop = asyncio.get_event_loop()</span><br><span class="line">app.init_with_loop(loop)</span><br><span class="line">loop.run_forever()</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/rudyryk/python-samples/blob/master/hello_tornado/hello_asyncio.py" target="_blank" rel="noopener">参考</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2018/01/06/aiomysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/06/aiomysql/" itemprop="url">aiomysql</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-06T15:30:17+08:00">
+                2018-01-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>突然兴起，去试了试aiomysql, 记录下遇到的问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import asyncio</span><br><span class="line">import aiomysql</span><br><span class="line"></span><br><span class="line">from config import db_config</span><br><span class="line"></span><br><span class="line">loop = asyncio.get_event_loop()</span><br><span class="line"></span><br><span class="line">async def test_example():</span><br><span class="line">    conn = await aiomysql.connect(</span><br><span class="line">        host=db_config[&apos;host&apos;],</span><br><span class="line">        port=db_config[&apos;port&apos;], # 第一个坑，之前用pymysql没单独指定port的, 是跟host一起写的</span><br><span class="line">        db=db_config[&apos;name&apos;],</span><br><span class="line">        user=db_config[&apos;user&apos;],</span><br><span class="line">        charset=&apos;utf8&apos;, # 第二个坑，没默认编码，导致取不出中文</span><br><span class="line">        password=db_config[&apos;password&apos;],</span><br><span class="line">        loop=loop</span><br><span class="line">    )</span><br><span class="line">    cur = await conn.cursor(aiomysql.DictCursor) # 第三个坑，不指定dict的话捞出来的是tuple类型的数据</span><br><span class="line">    await cur.execute(&quot;SELECT * FROM question ORDER BY create_time DESC LIMIT 20&quot;)</span><br><span class="line">    r = await cur.fetchall()</span><br><span class="line">    print(r)</span><br><span class="line">    await cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line">loop.run_until_complete(test_example())</span><br></pre></td></tr></table></figure>
+<p>整体体验还不错，这是非pool的写法，pool 的写法如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import asyncio</span><br><span class="line">import aiomysql</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">async def test_example(loop):</span><br><span class="line">    pool = await aiomysql.create_pool(host=db_config[&apos;host&apos;], port=db_config[&apos;port&apos;],</span><br><span class="line">                                      user=db_config[&apos;user&apos;], password=db_config[&apos;password&apos;],</span><br><span class="line">                                      db=db_config[&apos;name&apos;], loop=loop)</span><br><span class="line">    async with pool.acquire() as conn:</span><br><span class="line">        async with conn.cursor(aiomysql.DictCursor) as cur:</span><br><span class="line">            await cur.execute(&quot;SELECT * FROM question ORDER By create_time DESC LIMIT 20&quot;)</span><br><span class="line">            print(cur.description)</span><br><span class="line">            r = await cur.fetchall()</span><br><span class="line">            print(r)</span><br><span class="line">    pool.close()</span><br><span class="line">    await pool.wait_closed()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">loop = asyncio.get_event_loop()</span><br><span class="line">loop.run_until_complete(test_example(loop))</span><br></pre></td></tr></table></figure></p>
+<p>目前没听说有公司生产环境大规模用，但是感觉应该是有用，只是没说而已吧。<br>或者都用celery去了?</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Pyclearl</p>
+              <p class="site-description motion-element" itemprop="description">Python Backend Developer.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.the5fire.com" title="the5fire" target="_blank">the5fire</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Pyclearl</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

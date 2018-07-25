@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python, Web" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Python Backend Developer.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pyclearl">
+<meta property="og:url" content="http://pyclear.me/page/8/index.html">
+<meta property="og:site_name" content="Pyclearl">
+<meta property="og:description" content="Python Backend Developer.">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Pyclearl">
+<meta name="twitter:description" content="Python Backend Developer.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://pyclear.me/page/8/"/>
+
+
+
+
+
+  <title>Pyclearl</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-91611718-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Pyclearl</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">When in doubt, use brute force.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2016/11/29/collections-module/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/29/collections-module/" itemprop="url">collections</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-29T23:35:32+08:00">
+                2016-11-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="collections-module"><a href="#collections-module" class="headerlink" title="collections module"></a>collections module</h2><p>collections提供了些新类型：deque和defaultdict, namedtuple等。</p>
+<h2 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h2><p>deque是性能非常高的，插入和删除优化到接近O(1),并且具有很有意思的特性。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line">dq = deque([1,2],12)</span><br><span class="line">for i in range(3,15):</span><br><span class="line">    dq.append(i) #添加到右端</span><br><span class="line">id(dq[0]) #4297546624</span><br><span class="line">id(dq[1]) #4297546656</span><br><span class="line">dq.append(18)</span><br><span class="line">id(dq[0]) #4297546656</span><br></pre></td></tr></table></figure></p>
+<p>用id来看添加值前后的内存地址会发现现的一个有意思的地方, 如果限制了大小，当满了以后那么添加新项目的话，会在相反的一端删除对象，添加了一个值后dq[0]的id变成了原来dq[1]的id值, 原来dq[0]里面的内容也被删除了, 这样的实现无疑保证了性能。</p>
+<p>deque是双端队列，在插入的时侯性能极好并且deque是线程安全的，appendleft和append是用来分别在左端和右端添加数据。</p>
+<p>还有个基于双端数据结构的函数：rotate, 它可以轻易的旋转所有项，rotate的参数<br>值大小决定旋转步数，正负决定旋转方向, 正向右转，负向左转。</p>
+<h2 id="defaultdict"><a href="#defaultdict" class="headerlink" title="defaultdict"></a>defaultdict</h2><p>与字典基本一样，除了对不存在的键将调用default_factory提供的函数来提供默认值，实际上与字典get取值设置默认值类似，只不过换成key不存在设置该key的值，并将这个key与所调用函数生成的值保存起来.</p>
+<h2 id="namedtuple"><a href="#namedtuple" class="headerlink" title="namedtuple"></a>namedtuple</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from collections import namedtuple</span><br><span class="line">NetAddress = nametuple(&apos;NetAddress&apos;, [&apos;hostname&apos;,&apos;port&apos;])</span><br><span class="line">a = NetAddress(&apos;localhost&apos;,80)</span><br><span class="line">a.hostname # &apos;localhost&apos;</span><br><span class="line">a.port # 80</span><br><span class="line">type(a) # ipython output __main__.NetAddress </span><br><span class="line">isinstance(a, tuple) # True</span><br></pre></td></tr></table></figure>
+<p>其实是构造了一个tuple的子类, 可以使用各种tuple的方法，但却提供了更方便的数据结构，isinstance验证了这点。<br>namedtuple具备更小的内存消耗，但是.方式的属性访问没类快。</p>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><p>有个点得记下，看collections的源码的时候发现，其使用了个_collections模块, 在标准库根本找不到，后来在爆站找到答案，居然是个内置库，c写的。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2016/11/27/glob/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/27/glob/" itemprop="url">glob</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-27T19:24:16+08:00">
+                2016-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="glob-module"><a href="#glob-module" class="headerlink" title="glob module"></a>glob module</h2><p>glob通过匹配来查找文件，该模块暴露出来三个函数glob, iglob, escape</p>
+<h2 id="glob"><a href="#glob" class="headerlink" title="glob"></a>glob</h2><p>  glob通过简单的匹配规则查找文件<br>  例如:<br>  *匹配所有<br>  ?匹配一个字符<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import glob</span><br><span class="line">glob.glob(&apos;*&apos;) # 返回当前目录下所有的文件</span><br><span class="line">glob.glob(&apos;?.*&apos;) #返回所有文件名是一个字符的文件</span><br></pre></td></tr></table></figure></p>
+<h2 id="iglob"><a href="#iglob" class="headerlink" title="iglob"></a>iglob</h2><p>  iglob与glob其实是一回事，区别在于一个返回list一个返回iter。<br>  事实上通过阅读代码你会发现，glob其实就是调用iglob,然后用list函数将<br>  iter值取出生成list</p>
+<h2 id="escape"><a href="#escape" class="headerlink" title="escape"></a>escape</h2><p>  escapse功能比较简单，就转义掉特殊字符</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2016/11/27/Python3-bytes-str/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/27/Python3-bytes-str/" itemprop="url">Python3 bytes/str</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-27T15:52:34+08:00">
+                2016-11-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近看到篇讲解Python3的str和bytes区别的好<a href="http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3" target="_blank" rel="noopener">文章</a><br>Python3文本总是Unicode,用str表示，二进制数据由bytes类型表示。<br>里面有句话是精髓所在: <em>The encoding is a crucial part of this translation process</em><br>编码是核心所在:<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;&apos;€20&apos;.encode(&apos;utf-8&apos;)</span><br><span class="line">b&apos;\xe2\x82\xac20&apos;</span><br><span class="line">&gt;&gt;&gt; b&apos;\xe2\x82\xac20&apos;.decode(&apos;utf-8&apos;)</span><br><span class="line">&apos;€20&apos;</span><br></pre></td></tr></table></figure></p>
+<p>字符是与特定二进制无关的抽象实体，每个字符几个字节保存在抽象上看无关紧要，只有编码解码的时候<br>才需要关注，延伸到Python2常见的编码问题，其实本质就是一句话。以什么编码就以什么解码-by<a href="http://aju.space/2015/11/10/Python-character-encoding-explained.html" target="_blank" rel="noopener">阿驹</a></p>
+<p>说到unicode,想起很多人其实是搞不清楚unicode,和UTF-8,UTF-16等这些的关系，多说句。其实很简单，unicode是一个字符集，UTF是一个编码方案或者说具体实现。这实现有好几种，于是就在UTF后加上编码单位，比如8就是使用8比特为单位来编码。关于编码更多更具体的可以看<a href="http://aju.space/2015/11/10/Python-character-encoding-explained.html" target="_blank" rel="noopener">这</a></p>
+<p>Python3的bytes/str类型让网络相关的底层库比较以迁移到Python3,我以前只知道这件事，但是没有很深刻的认知。<br>最近将一段Python2代码改为Python3，浏览器收到的字符永远是缺少的。<br>仔细查看后发觉问题出在content-length这个header字段上，bytes后的的字符串会比原字符串长。<br>而我传入的是原长度，所以浏览器解析的是原长度，于是就显得比原来的少。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2016/11/25/BIF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/25/BIF/" itemprop="url">内置函数与类型</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-25T20:23:13+08:00">
+                2016-11-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="BIF-built-in-functions-和-type"><a href="#BIF-built-in-functions-和-type" class="headerlink" title="BIF(built-in functions) 和 type"></a>BIF(built-in functions) 和 type</h2><p>内置函数和一些类型对与解释器来说总是可用的, py2中存在于<code>__builtin__</code><br>模块中,py3的builtins模块中.</p>
+<h2 id="BIF"><a href="#BIF" class="headerlink" title="BIF"></a>BIF</h2><p>一些常见的没什么好说的,比较有意思的和有特色的记录了下用法</p>
+<ul>
+<li><p>isinstance(obj, class_or_tuple) (note: Py2是class-or-type-or-tuple)</p>
+<p>  这个内置函数有意思就有意思在，参数类型可选tuple，然后你能在tuple里放<br>  一堆的类型，参数验证时非常好用</p>
+</li>
+<li><p>bytearray([x[)</p>
+  <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">In: bytearray(<span class="number">3</span>)</span><br><span class="line">Out: bytearray(<span class="string">b'\x00\x00\x00'</span>)</span><br><span class="line">In: s = bytearray(<span class="number">3</span>)</span><br><span class="line">In: s[<span class="number">0</span>]</span><br><span class="line">Out: <span class="number">0</span></span><br><span class="line">In: s[<span class="number">0</span>] = <span class="number">255</span></span><br><span class="line">In: s[<span class="number">0</span>]</span><br><span class="line">Out:<span class="number">255</span></span><br><span class="line">In: s[<span class="number">1</span>] = <span class="number">256</span></span><br><span class="line">ValueError:byte must be <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">255</span>)</span><br><span class="line">In: s = bytearray(<span class="string">b'pyclear'</span>)</span><br><span class="line">In: s[<span class="number">0</span>]</span><br><span class="line">Out: <span class="number">112</span></span><br><span class="line">In: chr(<span class="number">112</span>)</span><br><span class="line">Out: p</span><br><span class="line">In: s.decode(<span class="string">'utf-8'</span>)</span><br><span class="line">Out: pyclear</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>bytes(s, encoding)<br>bytes跟bytearray很类似，只不多bytes是不可变版本的</p>
+</li>
+<li>divmod(a,b)<br>这个函数会返回一个元组,<code>(a//b,a%b)</code>,浮点数会是<code>(math.floor(a/b),a%b)</code>,complex<br>不能用</li>
+<li><p>next(s,[,default])<br>由于py2中是<code>s.next()</code>,py3中是<code>s.__next__()</code><br>所以为了可移植性考虑写代码的时候应该用next()</p>
+</li>
+<li><p>reduce<br>reduce在Python3中不再是BIF了，其在Python3中位于functools模块里</p>
+</li>
+<li><p>callable(obj)<br>callable能够判断对象是否能调用</p>
+</li>
+<li><p>slice</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">In [4]: nick_name = slice(0,4,1)</span><br><span class="line">In [5]: s = &apos;Jane Austen&apos;</span><br><span class="line">In [6]: s[nick_name]</span><br><span class="line">Out[6]: &apos;Jane&apos;</span><br></pre></td></tr></table></figure>
+<p>为硬编码的切片进行命名，提高可读性</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pyclear.me/2016/11/11/elixir-one/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pyclearl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pyclearl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/11/11/elixir-one/" itemprop="url">elixir one</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-11-11T23:26:42+08:00">
+                2016-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/elixir/" itemprop="url" rel="index">
+                    <span itemprop="name">elixir</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h2><pre><code>div 10 ， 2 =&gt; 5
+10 / 2 =&gt; 5.0
+</code></pre><h2 id="求余"><a href="#求余" class="headerlink" title="求余"></a>求余</h2><pre><code>rem 10， 3 =&gt; 1
+</code></pre><h2 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h2><pre><code>sum = fn x, y -&gt; x + y end
+sum 10, 9 =&gt; 19
+
+匿名函数是闭包，当前作用域(scope)内的其它变量都可以访问
+x = 9
+(fn x -&gt; x + 1 end).(x) =&gt; 10
+x =&gt; 9
+</code></pre><h2 id="不是赋值，-而是模式匹配-pattern-match"><a href="#不是赋值，-而是模式匹配-pattern-match" class="headerlink" title="= 不是赋值， 而是模式匹配(pattern match)"></a><code>=</code> 不是赋值， 而是模式匹配(pattern match)</h2><h2 id="一些基础数据类型"><a href="#一些基础数据类型" class="headerlink" title="一些基础数据类型"></a>一些基础数据类型</h2><ul>
+<li>boolean<ul>
+<li>true or false</li>
+<li>method: is_boolean</li>
+<li>h is_boolean (类似python的help)</li>
+<li>elixir 文档描述函数一般是:<br>  <code>&lt;函数名&gt;/&lt;元数&gt;
+  元数可以理解为函数的参数个数</code></li>
+</ul>
+</li>
+<li>number<ul>
+<li>integer</li>
+<li>float (64位双精度浮点)</li>
+</ul>
+</li>
+<li>atom<ul>
+<li>类似ruby的符号(symbol）</li>
+<li>字符前加:就行了，大写字母开头的变量是一种原子，其等价于<code>:Elixir.变量名</code></li>
+<li><code>true == :true</code> # true</li>
+<li>is_atom(false) # true</li>
+<li>is_atom(:flase) # true</li>
+</ul>
+</li>
+<li>string<ul>
+<li>单引号定义字符串列表，双引号定义字符串</li>
+<li>string interpolation  <code>&quot;hello #{:world}&quot;</code></li>
+<li>byte_size(“hellö”) 返回所暂byte数</li>
+<li>String.length(“hellö”) 返回字符数</li>
+<li>“foo” &lt;&gt; “bar” # “foobar”</li>
+</ul>
+</li>
+<li>list<ul>
+<li><code>++</code> or <code>--</code> 拼接列表或消除列表</li>
+<li>method: length，hd，tl</li>
+<li>当list里的整数是ascii打印数值的时候会返回一个单引号的字符串列表 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iex&gt; [11, 12, 13]</span><br><span class="line">&apos;\v\f\r”</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>tuple<ul>
+<li>method: elem</li>
+</ul>
+</li>
+</ul>
+<h2 id="operators"><a href="#operators" class="headerlink" title="operators"></a>operators</h2><pre><code>* or, and , not # 只接受boolean
+* ||, &amp;&amp;, ! # accept arguments of any type
+* number &lt; atom &lt; reference &lt; function &lt; port &lt; pid &lt; tuple &lt; map &lt; list &lt; bitstring
+</code></pre><h2 id="elixir-vim-plug"><a href="#elixir-vim-plug" class="headerlink" title="elixir-vim plug"></a>elixir-vim plug</h2><p>add a line to .vimrc:<br>    <code>Plug &#39;elixir-lang/vim-elixir&#39;</code><br>last run in vim:<br>  <code>:PlugInstall</code></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Pyclearl</p>
+              <p class="site-description motion-element" itemprop="description">Python Backend Developer.</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          <div class="links-of-author motion-element">
+            
+          </div>
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.the5fire.com" title="the5fire" target="_blank">the5fire</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Pyclearl</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.3"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
