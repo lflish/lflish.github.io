@@ -1,16 +1,18 @@
 ---
 layout: page
-title: "Me"
+title: "关于我"
 date: 2016-07-08 22:40
 comments: true
 sharing: true
 footer: true
 ---
-### Python Backend Developer.
+### 屌丝程序员
 ### 欲做诸佛龙象，先做众生牛马。
 
-### 联系我呗
-OSX: `echo Y2FwcHljbGVhckBnbWFpbC5jb20= | base64 -D`
-Linux: `echo Y2FwcHljbGVhckBnbWFpbC5jb20= | base64 -d`
-## 要科学上网买这个呗
+### 联系我
+
+email:	aHh5LmdvbGRAZ21haWwuY29tCg==
+qq:	Njg4MTMxNzUK
+
+## 科学上网
 [here](https://bwh1.net/aff.php?aff=10011)

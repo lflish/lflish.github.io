@@ -78,3 +78,7 @@ deploy:
   type: git
   repo: git@github.com:lflish/lflish.github.io.git
   branch: master
+
+auto_excerpt:
+  enable: true
+  length: 10
