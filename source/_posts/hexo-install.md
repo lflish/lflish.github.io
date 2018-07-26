@@ -19,7 +19,7 @@ tags: 环境搭建
 	npm i -g hexo
 ```
 
-## hexo配置使用
+## hexo初始化
 
 ```bash
 	#创建目录
@@ -30,12 +30,28 @@ tags: 环境搭建
 
 	#清理缓存
 	hexo clean
+```
+## 文档编写
+```
+	#生成文件
+	hexo new test
+
+	#markdown 格式编写
+	echo "# hello world" >> ./source/_opst/title.md
 
 	#生成静态文件
 	hexo generate
+```
 
+## 开启服务
+```
 	#开启服务
 	hexo server -p 80
 ```
+## 参考文档
 
+[hexo官方文档](https://hexo.io/zh-cn/docs/)
+[next官方文档](http://theme-next.iissnan.com/)
+[零基础搭建hexo博客](https://www.cnblogs.com/visugar/p/6821777.html)
+[hexo博客添加功能](https://www.cnblogs.com/mrwuzs/p/7943337.html)
 
