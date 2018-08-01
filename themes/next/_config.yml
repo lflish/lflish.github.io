@@ -136,7 +136,7 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  the5fire: https://www.the5fire.com
+  mygit: https://github.com/lflish
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif

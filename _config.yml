@@ -80,5 +80,5 @@ deploy:
   branch: master
 
 auto_excerpt:
-  enable: true
-  length: 10
+  enable: false
+  ##length: 3

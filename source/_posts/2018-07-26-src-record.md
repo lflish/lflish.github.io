@@ -2,7 +2,7 @@
 title: 源码记录
 date: 2018-07-26 03:33:24
 categories: 
-	-linux
+	linux
 tags: 源码分析
 ---
 
@@ -13,6 +13,8 @@ tags: 源码分析
 	ossec:主机入侵检测工具 hids	
 	scanlogd: 端口防扫描工具
 	snort: 网络入侵检测工具 nids
+
+<!--more -->
 
 ### 系统相关
 	crond 定时任务
