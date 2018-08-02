@@ -72,7 +72,9 @@ tags: 环境搭建
 ```
 拷贝图片到目录
 markdown 引用本地图片的格式来引用图片就行了
-eg:![naruto](naruto.png)
+```
+	eg:![naruto](naruto.png)
+```
 
 ![naruto](naruto.jpg)
 
