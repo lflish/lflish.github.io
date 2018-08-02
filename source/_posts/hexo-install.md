@@ -34,7 +34,7 @@ tags: 环境搭建
 	hexo clean
 ```
 ## 文档编写
-```
+```bash
 	#生成文件
 	hexo new test
 
@@ -46,9 +46,18 @@ tags: 环境搭建
 ```
 
 ## 开启服务
-```
+```bash
 	#开启服务
 	hexo server -p 80
+```
+
+## push到github page
+```bash
+	#清理重新编译
+	hexo clean
+	hexo generate 
+	#push
+	hexo deploy
 ```
 ## 参考文档
 
