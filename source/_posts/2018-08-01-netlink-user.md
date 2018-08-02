@@ -15,11 +15,11 @@ IBM社区有篇文章作了更详细的介绍。
 
 ## 用户层
 
-#### 首先创建描述符
+### 首先创建描述符
 ```c
     int skfd = socket(AF_NETLINK, SOCK_RAW, NETLINK_TEST);
 ```
-#### 初始化一个sockaddr_nl结构，与网络描述符绑定    
+### 初始化一个sockaddr_nl结构，与网络描述符绑定    
     sockaddr_nl 结构
 ```c
     struct sockaddr_nl {
@@ -42,7 +42,7 @@ IBM社区有篇文章作了更详细的介绍。
     bind(skfd, (struct sockaddr *)&nladdr, sizeof(struct sockaddr_nl))
 ```
 
-#### 组装需要发送的消息msghdr结构
+### 组装需要发送的消息msghdr结构
 ```c
     struct msghdr msg;
     memset(&msg, 0, sizeof(msg));
@@ -122,16 +122,16 @@ struct nlmsghdr {
     __u32       nlmsg_pid;  /* Sending process port ID */
 };
 ```
-#### 发送消息到内核
+### 发送消息到内核
 ```c
     sendmsg(skfd, &msg, 0);
 ```
-#### 接收来自内核的消息
+### 接收来自内核的消息
 ```c
     sendmsg(skfd, &msg, 0);
 ```
 
-#### 代码
+### 代码
 ```c
 /**
  *	@file:	ktest.c
