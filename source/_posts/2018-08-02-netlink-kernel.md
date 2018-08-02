@@ -16,6 +16,7 @@ tags: kernel
 
 	nl_sk = netlink_kernel_create(&init_net, NETLINK_TEST, &cfg);
 ```
+<!--more-->
 
 netlink_kernel_create 函数的使用具体跟内核有关系，我这里是3.10的内核。
 ```c

@@ -8,7 +8,7 @@ tags: kernel
 ---
 内核层与用户层通信方式的话有很多种，比如procfs、sysfs、syscall、seq_file、netlink等几种吧。
 IBM社区有篇文章作了更详细的介绍。
-([用户空间与内核空间数据交换的方式](https://www.ibm.com/developerworks/cn/linux/l-kerns-usrs/)    
+[用户空间与内核空间数据交换的方式](https://www.ibm.com/developerworks/cn/linux/l-kerns-usrs/)    
 最常用的算是netlink。
 
 <!-- more -->
