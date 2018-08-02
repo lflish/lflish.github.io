@@ -52,6 +52,7 @@ tags: 环境搭建
 ```
 
 ## push到github page
+
 ```bash
 	#清理重新编译
 	hexo clean
@@ -59,6 +60,23 @@ tags: 环境搭建
 	#push
 	hexo deploy
 ```
+## 插入图片
+编辑_config.yml 修改post_asset_folder:false 为true
+
+```bash
+	#安装图片上传插件
+	npm install https://github.com/CodeFalling/hexo-asset-image --save
+	#创建一篇新闻章,此时创建的文章同时生产一个目录
+	hexo new test
+	#当然我这里是已有的项目,只需要创建个同名目录把图片放进去引用就行了
+```
+拷贝图片到目录
+markdown 引用本地图片的格式来引用图片就行了
+eg:![naruto](naruto.png)
+
+![naruto](naruto.jpg)
+
+	
 ## 参考文档
 
 [hexo官方文档](https://hexo.io/zh-cn/docs/)
