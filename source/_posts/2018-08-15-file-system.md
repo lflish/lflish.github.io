@@ -3,7 +3,7 @@ layout: post
 title: Linux文件系统
 date: 2018-08-15 03:27:36
 categories: linux
-tags:文件系统
+tags: 文件系统
 ---
 # linux文件系统
 在linux中一切皆文件，事实上并不是这样的，linux中有个VFS虚拟文件系统，对上层来说，一切皆文件，但是下层，每种设备类型有他自己的操作方式。
