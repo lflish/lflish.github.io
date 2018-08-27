@@ -1,6 +1,6 @@
 ---
 layout: post
-title: py_while_if
+title: python判断与循环
 date: 2018-08-24 04:39:40
 tags: python
 ---
@@ -15,6 +15,8 @@ elif <test2>:         # Optional elifs
 else:                 # Optional else    
     <statements3>
 ```
+
+<!--more-->
 
 #### if/else三元表达式
 
