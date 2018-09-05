@@ -78,6 +78,32 @@ markdown 引用本地图片的格式来引用图片就行了
 
 ![naruto](naruto.jpg)
 
+## 修改文件属性
+在用hexo new创建一个新的md文件时，会在开头添加以下内容。
+```
+---
+title: hexo博客搭建
+date: 2018-07-26 02:38:15
+tags:
+---
+```
+以上内容格式应该是可以定制的，所以网上查了下，确实如此。
+
+*之前介绍使用hexo new 的时候可以带一个参数layout，那么这个layout指的是什么呢？*
+*它其实是在scaffolds文件夹下的.md，默认情况下有draft.md page.md post.md*
+*如果没有指定的话它会默认使用post.md ，这个属性可以在根目录下的_config 文件中进行配置：*
+*default_layout: post 配置默认的layout*
+*同时我们也可以看到当你hexo new 的时候产生的md文件中会默认产生一些内容，这个内容就是上述介绍的draft.md page.md post.md 所指定的。*
+
+也就是说他这个默认格式由post.md来定义,类似如下。
+```
+title: {{ title }}
+date: {{ date }}
+tags:
+```
+但我这里不一样，我这里没找到他说的文件夹以及他说的post.md，不过我这有scaffolds.json的文件，通过修改里边的格式一样可以达到定制的目的。
+
+参考链接:http://tbfungeek.github.io/2016/02/27/Hexo-%E6%96%87%E7%AB%A0%E5%B1%9E%E6%80%A7/
 	
 ## 参考文档
 
