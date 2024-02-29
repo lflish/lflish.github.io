@@ -1,8 +1,7 @@
 ---
 title: hexo博客搭建
 date: 2018-07-26 02:38:15
-categories:
-	linux
+categories: linux	
 tags: 环境搭建
 ---
 
