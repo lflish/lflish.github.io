@@ -6,12 +6,8 @@
     "version": "3.3.7"
   },
   "dependencies": {
-<<<<<<< HEAD
     "gitalk": "^1.8.0",
-    "hexo": "^3.2.0",
-=======
     "hexo": "^3.9.0",
->>>>>>> a93299ee4f5fb34f78347485382ddfe91c8bf8b3
     "hexo-asset-image": "0.0.3",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^0.1.4",
