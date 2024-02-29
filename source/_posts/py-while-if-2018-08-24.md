@@ -3,6 +3,7 @@ layout: post
 title: python判断与循环
 date: 2018-08-24 04:39:40
 tags: python
+categories: python
 ---
 ## 条件判断
 
