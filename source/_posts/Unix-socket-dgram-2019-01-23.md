@@ -2,8 +2,8 @@
 layout: post
 title: Unix域套接字---数据报模式
 date: 2019-01-23 14:34:32
-tags:
-categories:
+tags: apue
+categories: linux
 ---
 
 ### 通信流程

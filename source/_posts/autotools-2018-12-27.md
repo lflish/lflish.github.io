@@ -2,8 +2,8 @@
 layout: post
 title: autotools
 date: 2018-12-27 15:04:35
-tags:
-categories:
+tags: 自动化
+categories: linux
 ---
 # autoconf工具的初步学习
 
