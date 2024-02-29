@@ -1,6 +1,6 @@
 ---
 layout: post
-title: autotools
+title: autoconf学习
 date: 2018-12-27 15:04:35
 tags: 自动化
 categories: linux
