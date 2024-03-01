@@ -16,6 +16,7 @@ Unix域套接字通信是比较高级的通信方式,也是IPC通信的一种。
 -   Unix域套接字可以再同一主机上传递描述符。强大
 -   可以提供额外的凭证。
 sockaddr_un结构在不同系统有不同的定义。
+
 ```c
 //linux 3.2 solaris 10
 struct sockaddr_un{
