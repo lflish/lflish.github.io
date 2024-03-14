@@ -1,5 +1,5 @@
 ---
-title: 网络代理 4-简单代(iptables)
+title: 网络代理 4-简单代理(iptables)
 date: 2024-03-13 22:40:24
 categories: 
 	计算机网络
