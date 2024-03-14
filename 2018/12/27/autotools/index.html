@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>autoconf学习 | lflish</title>
+  <meta name="keywords" content=" 自动化 ">
+  <meta name="description" content="autoconf学习 | lflish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lflish">
+<meta property="og:url" content="http://yoursite.com/README.html">
+<meta property="og:site_name" content="lflish">
+<meta property="og:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+<meta property="og:updated_time" content="2024-02-29T05:57:19.210Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lflish">
+<meta name="twitter:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta name="twitter:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="undefined">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>lflish</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/lflish"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:68813175@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=68813175&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(28)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+    <li>
+        <div data-rel="读书">
+            
+            读书
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="kernel">
+            
+            kernel
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="linux">
+            
+            linux
+            <small>(10)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="lua">
+            
+            lua
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="python">
+            
+            python
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="安全分析">
+            
+            安全分析
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="计算机网络">
+            
+            计算机网络
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="28">
+<input type="hidden" id="yelog_site_word_count" value="23.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>apue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hlist</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kernel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lua</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Slax</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>书单</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>文件系统</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>渗透</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>源码分析</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>环境搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>自动化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>设计者的品味</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/13/network-04-简单代理-iptables/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 4-简单代理(iptables)">网络代理 4-简单代理(iptables)</span>
+            <span class="post-date" title="2024-03-13 22:40:24">2024/03/13</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/11/network-03-简单代理-nc/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 3-简单代理(nc)">网络代理 3-简单代理(nc)</span>
+            <span class="post-date" title="2024-03-11 18:40:24">2024/03/11</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/10/network-02-常用场景/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 2-常用场景">网络代理 2-常用场景</span>
+            <span class="post-date" title="2024-03-10 18:40:24">2024/03/10</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/01/network-01-代理简介/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 1-常见代理介绍">网络代理 1-常见代理介绍</span>
+            <span class="post-date" title="2024-03-01 03:33:24">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记1/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua笔记">lua笔记</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记2/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="Lua流程控制">Lua流程控制</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记3/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua函数">lua函数</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/08/kernel-hlist/"
+           data-tag="hlist"
+           data-author="" >
+            <span class="post-title" title="内核链表">内核链表</span>
+            <span class="post-date" title="2019-05-08 13:26:10">2019/05/08</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/05/slax简单配置/"
+           data-tag="Slax"
+           data-author="" >
+            <span class="post-title" title="Slax简单配置">Slax简单配置</span>
+            <span class="post-date" title="2019-05-05 15:36:54">2019/05/05</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2018-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2018年书单">2018年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2019-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2019年书单">2019年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/23/Unix-socket-dgram/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---数据报模式">Unix域套接字---数据报模式</span>
+            <span class="post-date" title="2019-01-23 14:34:32">2019/01/23</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-socket-stream/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---流模式">Unix域套接字---流模式</span>
+            <span class="post-date" title="2019-01-22 16:38:03">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-domain-socket/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字">Unix域套接字</span>
+            <span class="post-date" title="2019-01-22 16:34:19">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/12/27/autotools/"
+           data-tag="自动化"
+           data-author="" >
+            <span class="post-title" title="autoconf学习">autoconf学习</span>
+            <span class="post-date" title="2018-12-27 15:04:35">2018/12/27</span>
+        </a>
+        
+        
+        <a  class="All 安全分析 "
+           href="/2018/09/12/缓冲区溢出demo/"
+           data-tag="渗透"
+           data-author="" >
+            <span class="post-title" title="溢出攻击测试">溢出攻击测试</span>
+            <span class="post-date" title="2018-09-12 22:35:59">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/2018/09/12/学习从历史开始/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习重历史开始">学习重历史开始</span>
+            <span class="post-date" title="2018-09-12 22:32:10">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/09/04/read/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux命令-read">Linux命令-read</span>
+            <span class="post-date" title="2018-09-04 21:43:08">2018/09/04</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-while-if/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python判断与循环">python判断与循环</span>
+            <span class="post-date" title="2018-08-24 04:39:40">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-obj/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python类">python类</span>
+            <span class="post-date" title="2018-08-24 04:38:44">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-fun/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python函数定义">python函数定义</span>
+            <span class="post-date" title="2018-08-24 04:34:16">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/17/设计者的品味/"
+           data-tag="设计者的品味"
+           data-author="" >
+            <span class="post-title" title="设计者的品味">设计者的品味</span>
+            <span class="post-date" title="2018-08-17 01:48:03">2018/08/17</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/08/15/2018-08-15-file-system/"
+           data-tag="文件系统"
+           data-author="" >
+            <span class="post-title" title="Linux文件系统">Linux文件系统</span>
+            <span class="post-date" title="2018-08-15 03:27:36">2018/08/15</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/12/2018-08-12-self/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="程序员的自我修养">程序员的自我修养</span>
+            <span class="post-date" title="2018-08-12 23:13:38">2018/08/12</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/02/2018-08-02-netlink-kernel/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-内核层">netlink通信机制-内核层</span>
+            <span class="post-date" title="2018-08-02 02:01:33">2018/08/02</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/01/2018-08-01-netlink-user/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-用户层">netlink通信机制-用户层</span>
+            <span class="post-date" title="2018-08-01 04:40:10">2018/08/01</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/2018-07-26-src-record/"
+           data-tag="源码分析"
+           data-author="" >
+            <span class="post-title" title="源码记录">源码记录</span>
+            <span class="post-date" title="2018-07-26 03:33:24">2018/07/26</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/hexo-install/"
+           data-tag="环境搭建"
+           data-author="" >
+            <span class="post-title" title="hexo博客搭建">hexo博客搭建</span>
+            <span class="post-date" title="2018-07-26 02:38:15">2018/07/26</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-autotools" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">autoconf学习</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="linux">linux</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">自动化</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2024-02-29 16:57:39'>2018-12-27 15:04</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:2k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#autoconf工具的初步学习"><span class="toc-text">autoconf工具的初步学习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#autoconf产生的历史原因"><span class="toc-text">autoconf产生的历史原因</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、Genesis"><span class="toc-text">一、Genesis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、Exodus"><span class="toc-text">二、Exodus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、Leviticus"><span class="toc-text">三、Leviticus</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、Numbers"><span class="toc-text">四、Numbers</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、Leviticus"><span class="toc-text">五、Leviticus</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#autoconf使用案例"><span class="toc-text">autoconf使用案例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、普通版本"><span class="toc-text">一、普通版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、autoconf版本"><span class="toc-text">二、autoconf版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、选择文件编译"><span class="toc-text">三、选择文件编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、条件编译"><span class="toc-text">四、条件编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、扩展"><span class="toc-text">五、扩展</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="autoconf工具的初步学习"><a href="#autoconf工具的初步学习" class="headerlink" title="autoconf工具的初步学习"></a>autoconf工具的初步学习</h1><h2 id="autoconf产生的历史原因"><a href="#autoconf产生的历史原因" class="headerlink" title="autoconf产生的历史原因"></a>autoconf产生的历史原因</h2><p>原先写过一篇文章，叫《学习从历史开始》,这里先说下autotools产生的历史原因。<br>autoconf历史：<br><a href="https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/History.html#History" target="_blank" rel="external">https://www.gnu.org/savannah-checkouts/gnu/autoconf/manual/autoconf-2.69/html_node/History.html#History</a>  </p>
+<h3 id="一、Genesis"><a href="#一、Genesis" class="headerlink" title="一、Genesis"></a>一、<strong>Genesis</strong></h3><p>1991年6月，作者维护了许多GNU的开源软件，而且这些开源软件被应用到了很多的平台。每个平台可能都需要依赖不同的-D参数来编译，<em>(-D是gcc编译器处理宏定义的一个选项)</em>。所以作者写了个shell脚本来检测系统已安装的工具包。由此configure脚本就诞生了。<br>    后续做了一些改进，使用Makefile.in作为模板。<br><a id="more"></a></p>
+<h3 id="二、Exodus"><a href="#二、Exodus" class="headerlink" title="二、Exodus"></a>二、<strong>Exodus</strong></h3><p>起初，许多用户给作者发送了很多建议，作者都是通过emacs中的搜索替换功能来更新自己的configure。<br>    有天，有位大佬说作者工具很棒，问作者是否有自动生成的工具，作者意识到，是时候让它自己来生成脚本了。(小度啊，是时候自己写代码了)，于是，作者选用了M4语言来生成脚本。  </p>
+<h3 id="三、Leviticus"><a href="#三、Leviticus" class="headerlink" title="三、Leviticus"></a><strong>三、Leviticus</strong></h3><p>添加新的特性。比如，通过创建c的头文件来代替-D选项，这个应该就是指的config.h 这类文件。</p>
+<h3 id="四、Numbers"><a href="#四、Numbers" class="headerlink" title="四、Numbers"></a><strong>四、Numbers</strong></h3><p>终于，在1992年发布了autoconf的1.0，越来越多的人使用，包括哪些非GNU人员。这中间有许多开发者加入进来添加了许多新的特性，支持了更多的语言。</p>
+<h3 id="五、Leviticus"><a href="#五、Leviticus" class="headerlink" title="五、Leviticus"></a><strong>五、Leviticus</strong></h3><p>1994，经过许多人的共同开发，这工具也大概就进入到了稳定期，这时候多少会留下来一些问题，不如编码风格，宏命名规范，等等。作者做了一些修正，统一，部分特性的添加。<br>由此，2.0也就来临了。<br>(作者说，我又开始 闲的一批了)</p>
+<h1 id="autoconf使用案例"><a href="#autoconf使用案例" class="headerlink" title="autoconf使用案例"></a>autoconf使用案例</h1><h3 id="一、普通版本"><a href="#一、普通版本" class="headerlink" title="一、普通版本"></a>一、<strong>普通版本</strong></h3><p>两个文件，一个makefile文件，一个program.cc文件</p>
+<p>Makefile文件</p>
+<pre><code class="Makefile">CXX=g++
+LD=g++
+CXXFLAGS=-Wall -Wextra
+
+program: program.o
+    $(LD) -o $@ $^
+</code></pre>
+<p>program.cc文件</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    cout &lt;&lt; &quot;Hello, I am a program\n&quot;;
+}
+</code></pre>
+<p>编译</p>
+<pre><code>make &amp;&amp; ./program
+</code></pre><h3 id="二、autoconf版本"><a href="#二、autoconf版本" class="headerlink" title="二、autoconf版本"></a>二、<strong>autoconf版本</strong></h3><p>一共三个文件，分别是makefile.in, configure.ac,program.cc<br>makefile.in是生成makefile的模板，会替换其中的部分变量<br>configure.ac 通过autoconf生成configure<br>Makefile.in 文件</p>
+<pre><code class="Makefile">CXX=@CXX@
+LD=@CXX@
+CXXFLAGS=@CXXFLAGS@
+
+program: program.o
+    $(LD) -o $@ $^
+
+.PHONY: clean
+clean:
+    rm -f program *.o
+</code></pre>
+<p>configure.ac 文件</p>
+<pre><code class="MAKEFILE">AC_INIT(program, 1.0)
+
+#dnl Switch to a C++ compiler, and check if it works.
+AC_LANG(C++)
+AC_PROG_CXX
+
+#dnl Process Makefile.in to create Makefile
+AC_OUTPUT(Makefile)
+</code></pre>
+<p>_AC_PROG<em>CXX:会初始化当前语言的一些默认参数，比如CXX=G++,CXXFLAGS= -g -O2等</em><br>_AC<em>LANG(C++):标识当前语言</em><br>_AC<em>OUTPUT创建输出文件</em><br><em>dnl是注释</em> </p>
+<p>运行</p>
+<pre><code class="shell">./configure &amp;&amp;  make
+</code></pre>
+<p>这里默认CXX就是g++了 因为语言是c++，但是也可以通过在configure.ac中指定，或者在运行configure时指定</p>
+<pre><code class="shell">./configure CXX=&quot;gcc-c++&quot;
+</code></pre>
+<h3 id="三、选择文件编译"><a href="#三、选择文件编译" class="headerlink" title="三、选择文件编译"></a>三、<strong>选择文件编译</strong></h3><p>这里有五个文件，分别是Makefile.in, configure.ac, hello_libz.cc, hello_no_libz.cc, program.cc  </p>
+<p>Makefile.in文件</p>
+<pre><code class="Makefile">CXX=@CXX@
+LD=@CXX@
+CXXFLAGS=@CXXFLAGS@
+LDFLAGS=@LDFLAGS@
+LIBS=@LIBS@
+
+objs=@objs@
+
+program: program.o $(objs)
+    $(LD) -o $@ $^ $(LDFLAGS) $(LIBS)
+
+.PHONY: clean
+clean:
+    rm -f program *.o
+</code></pre>
+<p>configure.ac </p>
+<pre><code class="Makefile">AC_INIT(program, 1.0)
+
+dnl Switch to a C++ compiler, and check if it works.
+AC_LANG(C++)
+AC_PROG_CXX
+
+#dnl List of object files as determined by autoconf
+object_files=&quot;&quot;
+
+a=0
+AC_CHECK_HEADERS(zlib.h, [], [a=1])
+AC_SEARCH_LIBS(deflate, z, [], [a=1])
+
+if test $a == 0
+then
+    object_files=&quot;$object_files hello_libz.o&quot;
+else
+    object_files=&quot;$object_files hello_no_libz.o&quot;
+fi
+
+dnl Make AC_OUTPUT substitute the contents of $object_files for @objs@
+AC_SUBST(objs, [&quot;$object_files&quot;])
+
+dnl Process Makefile.in to create Makefile
+AC_OUTPUT(Makefile)
+</code></pre>
+<p>hello_libz.cc</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;zlib.h&gt;
+
+using namespace std;
+
+void hello()
+{
+    //Output a string, compressed in gzip format.
+    unsigned char in[] = &quot;Hello, I am a program\n&quot;;
+    unsigned char out[1024] = {};
+
+    z_stream strm = {};
+    deflateInit2(&amp;strm, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 8+16, 9, Z_DEFAULT_STRATEGY);
+    strm.next_in = in;
+    strm.avail_in = sizeof(in);
+    strm.next_out = out;
+    strm.avail_out = sizeof(out);
+    deflate(&amp;strm, Z_FINISH);
+    deflateEnd(&amp;strm);
+
+    cout.write((const char*)out, strm.total_out);
+}
+</code></pre>
+<p>hello_no_libz.cc    </p>
+<pre><code class="c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+void hello()
+{
+    char data[]={0x1f,0x8b,0x08,0x00,0x00,0x00,0x00,0x00,0x00,
+                0x03,0xf3,0x48,0xcd,0xc9,0xc9,0xd7,0x51,0xf0,
+                0x54,0x48,0xcc,0x55,0x48,0x54,0x28,0x28,0xca,
+                0x4f,0x2f,0x4a,0xcc,0xe5,0x62,0x00,0x00,0x45,
+                0x29,0xde,0xb8,0x17,0x00,0x00,0x00};
+
+    cout.write(data, sizeof(data));
+}
+</code></pre>
+<p>program.cc  </p>
+<pre><code class="c++">using namespace std;
+
+//The purpose here is to teach autoconf, not C++ best
+//practices...
+void hello();
+
+int main()
+{
+    hello();
+}
+</code></pre>
+<p>这里最主要的是这块</p>
+<pre><code class="Makefile">a=0
+AC_CHECK_HEADERS(zlib.h, [], [a=1])
+AC_SEARCH_LIBS(deflate, z, [], [a=1])
+
+if test $a == 0
+then
+    object_files=&quot;$object_files hello_libz.o&quot;
+else
+    object_files=&quot;$object_files hello_no_libz.o&quot;
+fi
+</code></pre>
+<p><strong>AC_SEARCH_LIBS</strong> 会检测libz库是否存在，测试原理是通过 <strong>AC_CHECK_LIB(m,cos)</strong> 宏，这个宏会生成如下测试代码</p>
+<pre><code class="c">char cos (); 
+int main ()
+{   
+    cos ();
+    return 0;
+}
+</code></pre>
+<p>参数一:测试的函数<br>参数二:测试的库<br>参数三:成功操作<br>参数四:失败操作  </p>
+<h3 id="四、条件编译"><a href="#四、条件编译" class="headerlink" title="四、条件编译"></a>四、<strong>条件编译</strong></h3><p>makefile.in</p>
+<pre><code class="Makefile">CXX=@CXX@
+LD=@CXX@
+CXXFLAGS=@CXXFLAGS@
+LDFLAGS=@LDFLAGS@
+LIBS=@LIBS@
+
+program: program.o
+    $(LD) -o $@ $^ $(LDFLAGS) $(LIBS)
+
+.PHONY: clean
+clean:
+    rm -f program *.o
+</code></pre>
+<p>config.in</p>
+<pre><code class="c++">#ifndef INCLUDE_CONFIG_H_df90858
+#define INCLUDE_CONFIG_H_df90858
+
+#undef HAVE_ZLIB
+
+#endif
+</code></pre>
+<p>configure.ac</p>
+<pre><code>AC_INIT(program, 1.0)
+
+dnl Switch to a C++ compiler, and check if it works.
+AC_LANG(C++)
+AC_PROG_CXX
+
+
+a=0
+AC_CHECK_HEADERS(zlib.h, [], [a=1])
+AC_SEARCH_LIBS(deflate, z, [], [a=1])
+
+if test $a == 0
+then
+    AC_DEFINE(HAVE_LIBZ)
+fi
+
+
+AC_CONFIG_HEADERS(config.h)
+AC_OUTPUT(Makefile)
+</code></pre><p>program.cc</p>
+<pre><code class="c">#include &lt;iostream&gt;
+#include &quot;config.h&quot;
+using namespace std;
+
+
+#ifdef HAVE_ZLIB
+    #include &lt;zlib.h&gt;
+    void hello()
+    {
+        //Output a string, compressed in gzip format.
+        unsigned char in[] = &quot;Hello, I am a program\n&quot;;
+        unsigned char out[1024] = {};
+
+        z_stream strm = {};
+        deflateInit2(&amp;strm, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 8+16, 9, Z_DEFAULT_STRATEGY);
+        strm.next_in = in;
+        strm.avail_in = sizeof(in);
+        strm.next_out = out;
+        strm.avail_out = sizeof(out);
+        deflate(&amp;strm, Z_FINISH);
+        deflateEnd(&amp;strm);
+
+        cout.write((const char*)out, strm.total_out);
+    }
+#else
+    void hello()
+    {
+        char data[]={0x1f,0x8b,0x08,0x00,0x00,0x00,0x00,0x00,0x00,
+                     0x03,0xf3,0x48,0xcd,0xc9,0xc9,0xd7,0x51,0xf0,
+                     0x54,0x48,0xcc,0x55,0x48,0x54,0x28,0x28,0xca,
+                     0x4f,0x2f,0x4a,0xcc,0xe5,0x62,0x00,0x00,0x45,
+                     0x29,0xde,0xb8,0x17,0x00,0x00,0x00};
+
+        cout.write(data, sizeof(data));
+    }
+#endif
+
+int main()
+{
+    hello();
+}
+</code></pre>
+<p>这种方式需要写一个config.in配置文件用来生成，config.h，比如如果libz存在会注释 #undef HAVE_ZLIB 并添加 #define HAVE_ZLIB。</p>
+<p>Avoid config.h as much as possible. Disadvantages are:</p>
+<ol>
+<li>Every file depending on config.h must be rebuilt if config.h changes even if the change is irrelevant.</li>
+<li>Conditional compilation is ugly and can lead to tangled messes of dead code.</li>
+<li>It’s generally good practice to avoid the preprocessor where possible.</li>
+<li>If you’re building a library and you’ve got a config.h included from the public headers, then everything using the library has to be rebuilt if config.h changes.</li>
+<li>More source files means better parallel builds.</li>
+</ol>
+<p>以上是针对不存在库的两种使用方式，建议使用第一种，第二种有以上缺点。</p>
+<p>以上其实就够用了，但是也有一些扩展使用，比如–with –enable等，这里举个例子</p>
+<h3 id="五、扩展"><a href="#五、扩展" class="headerlink" title="五、扩展"></a>五、<strong>扩展</strong></h3><p>Makefile.in  </p>
+<pre><code class="Makefile">CXX=@CXX@
+LD=@CXX@
+CXXFLAGS=@CXXFLAGS@
+LDFLAGS=@LDFLAGS@
+LIBS=@LIBS@
+
+objs=@objs@
+
+program: program.o $(objs)
+    $(LD) -o $@ $^ $(LDFLAGS) $(LIBS)
+
+.PHONY: clean
+clean:
+    rm -f program *.o
+</code></pre>
+<p>configure.ac</p>
+<pre><code>AC_INIT(program, 1.0)
+
+dnl Switch to a C++ compiler, and check if it works.
+AC_LANG(C++)
+AC_PROG_CXX
+
+dnl List of object files as determined by autoconf
+object_files=&quot;&quot;
+
+AC_ARG_WITH(zlib, [AS_HELP_STRING([--without-zlib], [do not use zlib])])
+
+zlib_objs=hello_no_libz.o
+if test &quot;$with_zlib&quot; != no
+then
+    a=0
+    AC_CHECK_HEADERS(zlib.h, [], [a=1])
+    AC_SEARCH_LIBS(deflate, z, [], [a=1])
+
+    if test $a == 0
+    then
+        zlib_objs=hello_libz.o
+    fi
+fi
+
+object_files=&quot;$object_files $zlib_objs&quot;
+
+dnl Make AC_OUTPUT substitute the contents of $object_files for @objs@
+AC_SUBST(objs, [&quot;$object_files&quot;])
+
+dnl Process Makefile.in to create Makefile
+AC_OUTPUT(Makefile)
+</code></pre><p>hello_libz.cc  </p>
+<pre><code class="c++">#include &lt;iostream&gt;
+#include &lt;zlib.h&gt;
+
+using namespace std;
+
+void hello()
+{
+    //Output a string, compressed in gzip format.
+    unsigned char in[] = &quot;Hello, I am a program\n&quot;;
+    unsigned char out[1024] = {};
+
+    z_stream strm = {};
+    deflateInit2(&amp;strm, Z_DEFAULT_COMPRESSION, Z_DEFLATED, 8+16, 9, Z_DEFAULT_STRATEGY);
+    strm.next_in = in;
+    strm.avail_in = sizeof(in);
+    strm.next_out = out;
+    strm.avail_out = sizeof(out);
+    deflate(&amp;strm, Z_FINISH);
+    deflateEnd(&amp;strm);
+
+    cout.write((const char*)out, strm.total_out);
+}
+</code></pre>
+<p>hello_no_libz.cc</p>
+<pre><code class="c++">#include &lt;iostream&gt;
+
+using namespace std;
+
+void hello()
+{
+    char data[]={0x1f,0x8b,0x08,0x00,0x00,0x00,0x00,0x00,0x00,
+                 0x03,0xf3,0x48,0xcd,0xc9,0xc9,0xd7,0x51,0xf0,
+                 0x54,0x48,0xcc,0x55,0x48,0x54,0x28,0x28,0xca,
+                 0x4f,0x2f,0x4a,0xcc,0xe5,0x62,0x00,0x00,0x45,
+                 0x29,0xde,0xb8,0x17,0x00,0x00,0x00};
+
+    cout.write(data, sizeof(data));
+}
+</code></pre>
+<p>progarm.cc这个同上 都一样。  </p>
+<p>这里修改了以下内容</p>
+<pre><code>AC_ARG_WITH(zlib, [AS_HELP_STRING([--without-zlib], [do not use zlib])])
+
+zlib_objs=hello_no_libz.o
+if test &quot;$with_zlib&quot; != no
+then
+    a=0
+    AC_CHECK_HEADERS(zlib.h, [], [a=1])
+    AC_SEARCH_LIBS(deflate, z, [], [a=1])
+
+    if test $a == 0
+    then
+        zlib_objs=hello_libz.o
+    fi
+fi
+</code></pre><p>这里可以使用–with-zlib 或者–without-zlib 来选择是否使用zlib库。<br>以上意思是，判断with-zlib是否为no, 默认是yes</p>
+<p>这里记录比较好的学习网站<br>例子:<a href="https://github.com/edrosten/autoconf_tutorial/blob/eb95160b15ca6133ffb5ffc5ee17fdab08fecfdc/README.md" target="_blank" rel="external">https://github.com/edrosten/autoconf_tutorial/blob/eb95160b15ca6133ffb5ffc5ee17fdab08fecfdc/README.md</a><br>变量说明:<a href="http://darktea.github.io/notes/2012/06/24/autotools.html" target="_blank" rel="external">http://darktea.github.io/notes/2012/06/24/autotools.html</a><br>官网:<a href="https://www.gnu.org/software/autoconf/manual/autoconf.html" target="_blank" rel="external">https://www.gnu.org/software/autoconf/manual/autoconf.html</a><br><a href="https://blog.csdn.net/romandion/article/details/1688234#TOC9" target="_blank" rel="external">https://blog.csdn.net/romandion/article/details/1688234#TOC9</a>  </p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 68813175@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2018-2088 lflish
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>网络代理 1-常见代理介绍 | lflish</title>
+  <meta name="keywords" content=" 代理 ">
+  <meta name="description" content="网络代理 1-常见代理介绍 | lflish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lflish">
+<meta property="og:url" content="http://yoursite.com/README.html">
+<meta property="og:site_name" content="lflish">
+<meta property="og:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+<meta property="og:updated_time" content="2024-02-29T05:57:19.210Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lflish">
+<meta name="twitter:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta name="twitter:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="undefined">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>lflish</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/lflish"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:68813175@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=68813175&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(28)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+    <li>
+        <div data-rel="读书">
+            
+            读书
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="kernel">
+            
+            kernel
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="linux">
+            
+            linux
+            <small>(10)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="lua">
+            
+            lua
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="python">
+            
+            python
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="安全分析">
+            
+            安全分析
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="计算机网络">
+            
+            计算机网络
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="28">
+<input type="hidden" id="yelog_site_word_count" value="23.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>apue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hlist</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kernel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lua</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Slax</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>书单</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>文件系统</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>渗透</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>源码分析</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>环境搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>自动化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>设计者的品味</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/13/network-04-简单代理-iptables/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 4-简单代理(iptables)">网络代理 4-简单代理(iptables)</span>
+            <span class="post-date" title="2024-03-13 22:40:24">2024/03/13</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/11/network-03-简单代理-nc/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 3-简单代理(nc)">网络代理 3-简单代理(nc)</span>
+            <span class="post-date" title="2024-03-11 18:40:24">2024/03/11</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/10/network-02-常用场景/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 2-常用场景">网络代理 2-常用场景</span>
+            <span class="post-date" title="2024-03-10 18:40:24">2024/03/10</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/01/network-01-代理简介/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 1-常见代理介绍">网络代理 1-常见代理介绍</span>
+            <span class="post-date" title="2024-03-01 03:33:24">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记1/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua笔记">lua笔记</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记2/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="Lua流程控制">Lua流程控制</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记3/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua函数">lua函数</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/08/kernel-hlist/"
+           data-tag="hlist"
+           data-author="" >
+            <span class="post-title" title="内核链表">内核链表</span>
+            <span class="post-date" title="2019-05-08 13:26:10">2019/05/08</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/05/slax简单配置/"
+           data-tag="Slax"
+           data-author="" >
+            <span class="post-title" title="Slax简单配置">Slax简单配置</span>
+            <span class="post-date" title="2019-05-05 15:36:54">2019/05/05</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2018-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2018年书单">2018年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2019-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2019年书单">2019年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/23/Unix-socket-dgram/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---数据报模式">Unix域套接字---数据报模式</span>
+            <span class="post-date" title="2019-01-23 14:34:32">2019/01/23</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-socket-stream/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---流模式">Unix域套接字---流模式</span>
+            <span class="post-date" title="2019-01-22 16:38:03">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-domain-socket/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字">Unix域套接字</span>
+            <span class="post-date" title="2019-01-22 16:34:19">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/12/27/autotools/"
+           data-tag="自动化"
+           data-author="" >
+            <span class="post-title" title="autoconf学习">autoconf学习</span>
+            <span class="post-date" title="2018-12-27 15:04:35">2018/12/27</span>
+        </a>
+        
+        
+        <a  class="All 安全分析 "
+           href="/2018/09/12/缓冲区溢出demo/"
+           data-tag="渗透"
+           data-author="" >
+            <span class="post-title" title="溢出攻击测试">溢出攻击测试</span>
+            <span class="post-date" title="2018-09-12 22:35:59">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/2018/09/12/学习从历史开始/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习重历史开始">学习重历史开始</span>
+            <span class="post-date" title="2018-09-12 22:32:10">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/09/04/read/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux命令-read">Linux命令-read</span>
+            <span class="post-date" title="2018-09-04 21:43:08">2018/09/04</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-while-if/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python判断与循环">python判断与循环</span>
+            <span class="post-date" title="2018-08-24 04:39:40">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-obj/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python类">python类</span>
+            <span class="post-date" title="2018-08-24 04:38:44">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-fun/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python函数定义">python函数定义</span>
+            <span class="post-date" title="2018-08-24 04:34:16">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/17/设计者的品味/"
+           data-tag="设计者的品味"
+           data-author="" >
+            <span class="post-title" title="设计者的品味">设计者的品味</span>
+            <span class="post-date" title="2018-08-17 01:48:03">2018/08/17</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/08/15/2018-08-15-file-system/"
+           data-tag="文件系统"
+           data-author="" >
+            <span class="post-title" title="Linux文件系统">Linux文件系统</span>
+            <span class="post-date" title="2018-08-15 03:27:36">2018/08/15</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/12/2018-08-12-self/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="程序员的自我修养">程序员的自我修养</span>
+            <span class="post-date" title="2018-08-12 23:13:38">2018/08/12</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/02/2018-08-02-netlink-kernel/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-内核层">netlink通信机制-内核层</span>
+            <span class="post-date" title="2018-08-02 02:01:33">2018/08/02</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/01/2018-08-01-netlink-user/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-用户层">netlink通信机制-用户层</span>
+            <span class="post-date" title="2018-08-01 04:40:10">2018/08/01</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/2018-07-26-src-record/"
+           data-tag="源码分析"
+           data-author="" >
+            <span class="post-title" title="源码记录">源码记录</span>
+            <span class="post-date" title="2018-07-26 03:33:24">2018/07/26</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/hexo-install/"
+           data-tag="环境搭建"
+           data-author="" >
+            <span class="post-title" title="hexo博客搭建">hexo博客搭建</span>
+            <span class="post-date" title="2018-07-26 02:38:15">2018/07/26</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-network-01-代理简介" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">网络代理 1-常见代理介绍</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="计算机网络">计算机网络</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">代理</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2024-03-14 22:39:59'>2024-03-01 03:33</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:2.2k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是代理？"><span class="toc-text">什么是代理？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#正向代理是什么？"><span class="toc-text">正向代理是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景"><span class="toc-text">使用场景</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#反向代理是什么？"><span class="toc-text">反向代理是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景-1"><span class="toc-text">使用场景</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#协议层"><span class="toc-text">协议层</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四层代理（Layer-4-Proxy）"><span class="toc-text">四层代理（Layer 4 Proxy）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景-2"><span class="toc-text">使用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相关项目："><span class="toc-text">相关项目：</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#七层代理（Layer-7-Proxy）"><span class="toc-text">七层代理（Layer 7 Proxy）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用场景-3"><span class="toc-text">使用场景</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#相关项目：-1"><span class="toc-text">相关项目：</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在当今互联网时代，计算机网络代理扮演着重要角色，为网络通信提供了更多的灵活性和安全性。本文将深入探讨代理的概念，包括正向代理、反向代理、四层代理、七层代理以及它们在现代网络中的常见应用场景。</p>
+<h1 id="什么是代理？"><a href="#什么是代理？" class="headerlink" title="什么是代理？"></a>什么是代理？</h1><p>在计算机网络中，代理是一种充当客户端和服务器之间中介的服务器。它接收来自客户端的请求，并将其转发给目标服务器，然后将服务器的响应返回给客户端。代理在通信过程中充当了中间人的角色，使得客户端和服务器之间的交互更加灵活和安全。</p>
+<h1 id="正向代理是什么？"><a href="#正向代理是什么？" class="headerlink" title="正向代理是什么？"></a>正向代理是什么？</h1><p>正向代理是位于客户端和目标服务器之间的中间服务器。客户端向正向代理发送请求，然后由代理服务器代表客户端向目标服务器发出请求。在这种情况下，目标服务器只知道请求来自代理服务器，并不知道最终的请求发起者是谁。</p>
+<h4 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h4><ol>
+<li><p><strong>突破网络限制：</strong><br>在某些网络环境下，可能存在访问限制或防火墙阻挡，例如企业内部网络、学校网络或某些国家的互联网审查制度。通过正向代理，用户可以访问被限制的网站或服务，从而突破网络限制，获取所需信息。</p>
+</li>
+<li><p><strong>提高访问速度：</strong><br>正向代理可以缓存常用的网络资源，例如网页内容、图片和视频等，加速用户对这些资源的访问速度。特别是在低带宽或高延迟网络环境下，正向代理可以大幅改善用户的访问体验。</p>
+</li>
+<li><p><strong>保护隐私安全：</strong><br>通过正向代理，用户的真实IP地址和其他个人信息可以被隐藏。这对于保护用户隐私安全具有重要意义，尤其是在对敏感信息进行访问时，正向代理可以为用户提供一定程度的匿名性。</p>
+</li>
+<li><p><strong>访问国际服务：</strong><br>在某些国家或地区，用户可能无法直接访问国际服务，例如Google、Facebook等。通过连接到位于国外的正向代理服务器，用户可以间接访问这些国际服务，实现跨境通信和信息获取。</p>
+</li>
+<li><p><strong>监控和过滤：</strong><br>企业和学校网络中通常会使用正向代理来监控和过滤网络流量。管理员可以通过代理服务器监控员工或学生的网络活动，并对不良内容进行过滤和限制，以维护网络安全和纪律。</p>
+</li>
+</ol>
+<p>在这些使用案例中，正向代理充当了用户和目标服务器之间的中间人，为用户提供了更便利、安全和高效的网络访问体验。然而，需要注意的是，正向代理也可能被滥用，因此在部署和使用时应当遵守法律法规，并采取适当的安全措施，保障网络通信的合法性和安全性。</p>
+<h1 id="反向代理是什么？"><a href="#反向代理是什么？" class="headerlink" title="反向代理是什么？"></a>反向代理是什么？</h1><p>与正向代理相反，反向代理位于目标服务器和客户端之间。客户端向反向代理发送请求，然后由代理服务器将请求转发给真实的目标服务器。在这种情况下，客户端只知道与反向代理通信，而不知道真实的服务器是谁。</p>
+<h4 id="使用场景-1"><a href="#使用场景-1" class="headerlink" title="使用场景"></a>使用场景</h4><ol>
+<li><p><strong>负载均衡：</strong><br>反向代理可以作为负载均衡器，将用户请求分发到多个后端服务器，以提高整体系统的性能和可用性。通过动态调整请求的分发策略，反向代理可以根据服务器的负载情况进行智能的负载均衡，确保每台服务器都能充分利用资源，避免单点故障和性能瓶颈。</p>
+</li>
+<li><p><strong>隐藏后端服务器：</strong><br>反向代理可以隐藏真实的后端服务器信息，提高网络安全性。对外部用户而言，他们只与反向代理进行通信，无法直接访问后端服务器。这种方式可以有效防止攻击者直接针对后端服务器发起攻击，增加了网络安全的屏障。</p>
+</li>
+<li><p><strong>缓存加速：</strong><br>反向代理可以缓存静态内容，例如网页、图片、视频等，以加速用户对这些资源的访问速度。通过在反向代理服务器上存储常用的静态资源，可以减轻后端服务器的负载压力，提高用户的访问体验。</p>
+</li>
+<li><p><strong>SSL终结：</strong><br>反向代理可以作为SSL终结点，负责处理加密和解密用户与服务器之间的SSL/TLS连接。通过集中管理SSL证书和加密算法，反向代理可以简化后端服务器的配置，并提供更高级别的安全保护。</p>
+</li>
+<li><p><strong>网站发布与版本控制：</strong><br>在网站发布和版本控制过程中，可以使用反向代理来实现流量的分发和灰度发布。通过反向代理，可以将用户流量引导到不同的服务器群组或不同的应用版本，以实现平滑的升级和回滚，同时最大程度地降低用户感知的影响。</p>
+</li>
+</ol>
+<h1 id="协议层"><a href="#协议层" class="headerlink" title="协议层"></a>协议层</h1><p>根据OSI网络七层协议模型，从网络通信协议上又可以分成四层代理与七层代理。</p>
+<h1 id="四层代理（Layer-4-Proxy）"><a href="#四层代理（Layer-4-Proxy）" class="headerlink" title="四层代理（Layer 4 Proxy）"></a>四层代理（Layer 4 Proxy）</h1><p>四层代理工作在OSI（开放系统互联模型）模型的传输层（第四层）。它主要关注网络数据包的传输和路由，不深入检查数据包的内容。四层代理通常基于数据包的源IP地址、目标IP地址、端口号等信息进行转发和过滤。</p>
+<h4 id="使用场景-2"><a href="#使用场景-2" class="headerlink" title="使用场景"></a>使用场景</h4><ol>
+<li><strong>负载均衡</strong>： 将传入的流量分发到多个后端服务器，以提高整体系统的性能和可用性。</li>
+<li><strong>流量控制</strong>： 控制传入流量的速率和分发，以保护服务器免受过载或恶意攻击。</li>
+<li><strong>高可用性</strong>： 当某个后端服务器不可用时，将流量自动转发到其他可用服务器上，确保服务的连续性。</li>
+<li><strong>网络加速</strong>： 通过智能的流量转发算法，优化网络传输效率，加速数据的传输速度。</li>
+</ol>
+<h4 id="相关项目："><a href="#相关项目：" class="headerlink" title="相关项目："></a>相关项目：</h4><ol>
+<li><strong>HAProxy</strong>： 一款高性能的开源负载均衡器，支持四层和七层负载均衡，被广泛用于Web服务器的负载均衡和流量控制。</li>
+<li><strong>Nginx</strong>： 除了作为七层代理之外，Nginx也支持四层代理功能，可用于TCP/UDP的负载均衡和流量控制。</li>
+<li><strong>Keepalived</strong>： 用于实现基于VRRP协议的高可用性解决方案，可与其他四层代理配合使用，实现故障转移和服务恢复。</li>
+</ol>
+<h1 id="七层代理（Layer-7-Proxy）"><a href="#七层代理（Layer-7-Proxy）" class="headerlink" title="七层代理（Layer 7 Proxy）"></a>七层代理（Layer 7 Proxy）</h1><p>七层代理工作在OSI模型的应用层（第七层）。它不仅关注网络数据包的传输，还深入分析数据包的内容，能够识别协议、请求类型和报文内容。七层代理可以根据应用层信息进行智能路由、请求过滤和内容修改等操作。</p>
+<h4 id="使用场景-3"><a href="#使用场景-3" class="headerlink" title="使用场景"></a>使用场景</h4><ol>
+<li><strong>HTTP反向代理</strong>： 将客户端的HTTP请求转发到后端服务器，并进行负载均衡和请求处理。</li>
+<li><strong>内容过滤</strong>： 根据请求头部或内容进行过滤，防止恶意攻击和非法访问。(API网关/WAF/微服务等)</li>
+<li><strong>SSL终结</strong>： 解密传入的SSL连接，然后将请求转发给后端服务器。</li>
+<li><strong>路由和重定向</strong>： 根据请求的URL进行路由和重定向，实现灵活的请求处理。</li>
+</ol>
+<h3 id="相关项目：-1"><a href="#相关项目：-1" class="headerlink" title="相关项目："></a>相关项目：</h3><ol>
+<li><strong>Nginx</strong>： Nginx是一个高性能的HTTP和反向代理服务器，支持七层代理功能。</li>
+<li><strong>Traefik</strong>： Traefik是一个现代化的反向代理和负载均衡器，专为微服务架构设计。</li>
+<li><strong>Envoy</strong>： Envoy是一个高性能的七层代理和通信总线，支持复杂的代理和路由功能。</li>
+</ol>
+<p><strong>除了以上列举的相关项目，也有虚拟专用网络等代理方案，针对平时常用的四层代理产品openvpn、wireguard、s*s、sing-box等，接下来从学习角度，分析并记录一下个人学习过程。</strong></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 68813175@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2018-2088 lflish
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

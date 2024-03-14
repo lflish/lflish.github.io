@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Slax简单配置 | lflish</title>
+  <meta name="keywords" content=" Slax ">
+  <meta name="description" content="Slax简单配置 | lflish">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:type" content="website">
+<meta property="og:title" content="lflish">
+<meta property="og:url" content="http://yoursite.com/README.html">
+<meta property="og:site_name" content="lflish">
+<meta property="og:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta property="og:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+<meta property="og:updated_time" content="2024-02-29T05:57:19.210Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="lflish">
+<meta name="twitter:description" content="个人博客 goldspace.ltd 版权声明： 自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）">
+<meta name="twitter:image" content="https://travis-ci.org/lflish/lflish.github.io.svg?branch=source">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="undefined">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>lflish</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/lflish"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:68813175@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=68813175&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(28)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+    <li>
+        <div data-rel="读书">
+            
+            读书
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="kernel">
+            
+            kernel
+            <small>(2)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="linux">
+            
+            linux
+            <small>(10)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="lua">
+            
+            lua
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="python">
+            
+            python
+            <small>(3)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="安全分析">
+            
+            安全分析
+            <small>(1)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+        
+            
+    <li>
+        <div data-rel="计算机网络">
+            
+            计算机网络
+            <small>(4)</small>
+        </div>
+        
+    </li>
+
+                undefined
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="28">
+<input type="hidden" id="yelog_site_word_count" value="23.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>apue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hlist</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kernel</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>lua</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>python</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shell</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Slax</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>书单</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>代理</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>文件系统</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>渗透</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>源码分析</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>环境搭建</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>自动化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>设计者的品味</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/13/network-04-简单代理-iptables/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 4-简单代理(iptables)">网络代理 4-简单代理(iptables)</span>
+            <span class="post-date" title="2024-03-13 22:40:24">2024/03/13</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/11/network-03-简单代理-nc/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 3-简单代理(nc)">网络代理 3-简单代理(nc)</span>
+            <span class="post-date" title="2024-03-11 18:40:24">2024/03/11</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/10/network-02-常用场景/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 2-常用场景">网络代理 2-常用场景</span>
+            <span class="post-date" title="2024-03-10 18:40:24">2024/03/10</span>
+        </a>
+        
+        
+        <a  class="All 计算机网络 "
+           href="/2024/03/01/network-01-代理简介/"
+           data-tag="代理"
+           data-author="" >
+            <span class="post-title" title="网络代理 1-常见代理介绍">网络代理 1-常见代理介绍</span>
+            <span class="post-date" title="2024-03-01 03:33:24">2024/03/01</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记1/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua笔记">lua笔记</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记2/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="Lua流程控制">Lua流程控制</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All lua "
+           href="/2019/09/29/lua笔记3/"
+           data-tag="lua"
+           data-author="" >
+            <span class="post-title" title="lua函数">lua函数</span>
+            <span class="post-date" title="2019-09-29 10:47:14">2019/09/29</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/08/kernel-hlist/"
+           data-tag="hlist"
+           data-author="" >
+            <span class="post-title" title="内核链表">内核链表</span>
+            <span class="post-date" title="2019-05-08 13:26:10">2019/05/08</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/05/05/slax简单配置/"
+           data-tag="Slax"
+           data-author="" >
+            <span class="post-title" title="Slax简单配置">Slax简单配置</span>
+            <span class="post-date" title="2019-05-05 15:36:54">2019/05/05</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2018-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2018年书单">2018年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2019/04/28/2019-book-list/"
+           data-tag="书单"
+           data-author="" >
+            <span class="post-title" title="2019年书单">2019年书单</span>
+            <span class="post-date" title="2019-04-28 15:39:04">2019/04/28</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/23/Unix-socket-dgram/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---数据报模式">Unix域套接字---数据报模式</span>
+            <span class="post-date" title="2019-01-23 14:34:32">2019/01/23</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-socket-stream/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字---流模式">Unix域套接字---流模式</span>
+            <span class="post-date" title="2019-01-22 16:38:03">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2019/01/22/Unix-domain-socket/"
+           data-tag="apue"
+           data-author="" >
+            <span class="post-title" title="Unix域套接字">Unix域套接字</span>
+            <span class="post-date" title="2019-01-22 16:34:19">2019/01/22</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/12/27/autotools/"
+           data-tag="自动化"
+           data-author="" >
+            <span class="post-title" title="autoconf学习">autoconf学习</span>
+            <span class="post-date" title="2018-12-27 15:04:35">2018/12/27</span>
+        </a>
+        
+        
+        <a  class="All 安全分析 "
+           href="/2018/09/12/缓冲区溢出demo/"
+           data-tag="渗透"
+           data-author="" >
+            <span class="post-title" title="溢出攻击测试">溢出攻击测试</span>
+            <span class="post-date" title="2018-09-12 22:35:59">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/2018/09/12/学习从历史开始/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习重历史开始">学习重历史开始</span>
+            <span class="post-date" title="2018-09-12 22:32:10">2018/09/12</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/09/04/read/"
+           data-tag="shell"
+           data-author="" >
+            <span class="post-title" title="Linux命令-read">Linux命令-read</span>
+            <span class="post-date" title="2018-09-04 21:43:08">2018/09/04</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-while-if/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python判断与循环">python判断与循环</span>
+            <span class="post-date" title="2018-08-24 04:39:40">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-obj/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python类">python类</span>
+            <span class="post-date" title="2018-08-24 04:38:44">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All python "
+           href="/2018/08/24/py-fun/"
+           data-tag="python"
+           data-author="" >
+            <span class="post-title" title="python函数定义">python函数定义</span>
+            <span class="post-date" title="2018-08-24 04:34:16">2018/08/24</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/17/设计者的品味/"
+           data-tag="设计者的品味"
+           data-author="" >
+            <span class="post-title" title="设计者的品味">设计者的品味</span>
+            <span class="post-date" title="2018-08-17 01:48:03">2018/08/17</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/08/15/2018-08-15-file-system/"
+           data-tag="文件系统"
+           data-author="" >
+            <span class="post-title" title="Linux文件系统">Linux文件系统</span>
+            <span class="post-date" title="2018-08-15 03:27:36">2018/08/15</span>
+        </a>
+        
+        
+        <a  class="All 读书 "
+           href="/2018/08/12/2018-08-12-self/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="程序员的自我修养">程序员的自我修养</span>
+            <span class="post-date" title="2018-08-12 23:13:38">2018/08/12</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/02/2018-08-02-netlink-kernel/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-内核层">netlink通信机制-内核层</span>
+            <span class="post-date" title="2018-08-02 02:01:33">2018/08/02</span>
+        </a>
+        
+        
+        <a  class="All kernel "
+           href="/2018/08/01/2018-08-01-netlink-user/"
+           data-tag="kernel"
+           data-author="" >
+            <span class="post-title" title="netlink通信机制-用户层">netlink通信机制-用户层</span>
+            <span class="post-date" title="2018-08-01 04:40:10">2018/08/01</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/2018-07-26-src-record/"
+           data-tag="源码分析"
+           data-author="" >
+            <span class="post-title" title="源码记录">源码记录</span>
+            <span class="post-date" title="2018-07-26 03:33:24">2018/07/26</span>
+        </a>
+        
+        
+        <a  class="All linux "
+           href="/2018/07/26/hexo-install/"
+           data-tag="环境搭建"
+           data-author="" >
+            <span class="post-title" title="hexo博客搭建">hexo博客搭建</span>
+            <span class="post-date" title="2018-07-26 02:38:15">2018/07/26</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-slax简单配置" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Slax简单配置</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="linux">linux</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">Slax</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2024-02-29 13:57:19'>2019-05-05 15:36</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>Count:1.2k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#简单说明"><span class="toc-text">简单说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图片修改"><span class="toc-text">图片修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中文字体"><span class="toc-text">中文字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#中文输入法"><span class="toc-text">中文输入法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开机启动程序"><span class="toc-text">开机启动程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写入U盘"><span class="toc-text">写入U盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其它"><span class="toc-text">其它</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考链接"><span class="toc-text">参考链接:</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>试用了几种Linux下的LiveCD系统，感觉slax看着界面挺好看，而且打包方便，可定制性比较强，一眼就爱上了，所以简单来说一下。</p>
+<a id="more"></a>
+<h3 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h3><p>以下是官方提供的方便用户打包软件的几个程序</p>
+<pre><code class="bash">apt search keyword                to search for available package by keyword
+apt install package                to download and install package
+savechanges target.sb                to save all filesystem modifications made during current session into a module file
+sb2dir module.sb                to convert a .sb module into a directory
+dir2sb directory.sb                to convert a directory into .sb module
+rmsbdir directory.sb                to erase directory created by sb2dir
+genslaxiso slax.iso module.sb        to generate Slax iso file with new modules
+slax activate module.sb                to activate module on the fly
+slax deactivate module.sb        to deactivate module on the fly
+</code></pre>
+<p>打包完后的程序是sb后缀的包，直接放到iso中<strong>/slax/modules/</strong>文件下，系统在运行时会自动加载安装完成。</p>
+<h3 id="图片修改"><a href="#图片修改" class="headerlink" title="图片修改"></a>图片修改</h3><ul>
+<li><p><strong>开机图片</strong><br><strong>/slax/boot/bootlogo.png</strong><br>这个可以在iso文件中删除，然后替换为新的图片</p>
+</li>
+<li><p><strong>背景图片</strong><br>比较彻底的方式是替换官方的背景图片，这个图片被打包在03-desktop.sb中。</p>
+<pre><code class="bash">  mkdir /tmp/03-desktop.sb
+
+  sb2dir 03-desktop.sb /tmp/03-desktop.sb/
+
+  #原图片路径，拷贝新的图片替换
+  /tmp/03-desktop.sb/usr/share/wallpapers/slax_wallpaper.jpg
+
+  #重新打包
+  dir2sb /tmp/03-desktop.sb or dir2sb 03-desktop.sb
+</code></pre>
+<p>  打包时请注意，创建的目录是.sb后缀，打包完成后目录会被删除换位打包后的文件。 </p>
+<p>  也可以使用<a href="https://www.slax.org/customize.php" target="_blank" rel="external">官方</a>提供的方式，打包一个新的sb包来替换原有背景图片<br><img src="/2019/05/05/slax简单配置/beijing.jpg" alt="beijing"></p>
+</li>
+</ul>
+<h3 id="中文字体"><a href="#中文字体" class="headerlink" title="中文字体"></a>中文字体</h3><ul>
+<li><p><strong>添加依赖中文库</strong><br>在iso中添加 <strong>/slax/modules/498-glibc-i18n.sb</strong></p>
+</li>
+<li><p><strong>设置时区与语言</strong>  </p>
+<pre><code>dpkg-reconfigure tzdata
+</code></pre><p>Asia –&gt; Taipei   </p>
+<pre><code>dpkg-reconfigure locales
+</code></pre><p>en_US.UTF8 UTF8 and zh_TW.UTF8 UTF8<br>未正确设置，可能会影响apt使用</p>
+</li>
+<li><p><strong>安装必备字体库</strong>   </p>
+<pre><code>apt update  
+apt install fonts-arphic-uming
+</code></pre><p>做完以上操作，浏览中文网页是没问题了，但是浏览器标题栏会出现方框字。</p>
+</li>
+<li><p><strong>chrome标题栏方框字</strong>   </p>
+<p>安装中文字体</p>
+<pre><code>apt install fonts-wqy-zenhei #文泉驛正黑
+apt install fonts-wqy-microhei #文泉驛微米黑
+</code></pre><p>然后修改字体设置<strong>/usr/share/fluxbox/styles/Slax/theme.cfg</strong></p>
+<pre><code>*font: WenQuanYi Micro Hei-9
+</code></pre><p>此时终端排版风格比较乱，到文件 <strong>/root/.Xresources</strong> 中做以下修改</p>
+<pre><code>XTerm*faceName:Dejavu Sans Mono:size=11
+XTerm*boldFont:Dejavu Sans Mono:size=11
+</code></pre><p><strong>注意: 方框字需要重启后才会消失，这里我搞了半天以为以上方式不行。</strong></p>
+</li>
+</ul>
+<p><img src="/2019/05/05/slax简单配置/chrome.jpg" alt="chrome"></p>
+<h3 id="中文输入法"><a href="#中文输入法" class="headerlink" title="中文输入法"></a>中文输入法</h3><p>可以去slax官网下载如下安装包，然后放入 <strong>/slax/modules/</strong> 中即可，不过这个输入法不太好用。</p>
+<pre><code>    1744-gcin.sb
+    3662-icu4c.sb
+    3663-harfbuzz.sb
+    3665-at-spi2-core.sb
+    3667-at-spi2-atk.sb
+    3668-gtk+3.sb
+    817-anthy.sb
+</code></pre><p>fcitx好像比较好，但是我安装了不知为啥不能用。</p>
+<h3 id="开机启动程序"><a href="#开机启动程序" class="headerlink" title="开机启动程序"></a>开机启动程序</h3><p>在/root/.xinitrc文件中添加需要自启动的程序   </p>
+<pre><code>    su guest chromium 127.0.0.1:3399 &amp;
+</code></pre><h3 id="写入U盘"><a href="#写入U盘" class="headerlink" title="写入U盘"></a>写入U盘</h3><p> 这里我是在ubuntu系统下，把iso做到U盘的，步骤如下:</p>
+<pre><code class="bash">    # 首先解压ISO，会生成一个slax文件夹
+
+    # 卸载U盘 
+    umount /dev/sdb4 
+
+    # 格式化U盘为ext2格式
+    mkfs.ext2 /dev/sdb4
+
+    # 拷贝slax文件夹到U盘
+    cp -rf /home/yu/Desktop/slax /media/yu/*/
+
+    # 执行引导脚本 
+    cd /media/yu/*/slax/boot/ &amp;&amp; ./bootinst.sh
+</code></pre>
+<p>如果是windows系统步骤一样，执行的是bootinst.bat脚本。</p>
+<p>注意:Windows 10下失败告终，官方说支持FAT32与ext2文件格式，下边是失败经历：<br>第一次，使用UltraISO直接写到U盘，重启引导失败。<br>第二次，格式化为FAT32，然后ISO解压多出个[BOOT]文件夹，没管它直接拷贝slax文件夹，运行脚本，重启引导失败。<br>第三次，重新格式化为FAT32，然后[BOOT]文件夹也拷贝过去，运行脚本，重启引导失败。<br>此时，我内心是崩溃的。<br>然后就准备ext2格式的文件系统，U盘插入Ubuntu系统中，发现U盘中除了slax文件夹竟然还有个什么systeminfo什么的文件夹，WTK。<br>微软是真TM的狠。</p>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>在做的时候，最好在U盘中做修改，因为U盘可以落盘，修改完的信息重启以后会被保存。<br>因为条件比较苛刻，公司用的是静态IP，并且上网需要认证，认证的用户名还是中文，然而系统没中文输入法，所以不能联网，就在虚拟机里做的。<br>这样就相对麻烦，需要安装完软件后打包为sb，然后拷贝出来，手动把sb添加到iso，用新的iso重新启动查看效果。</p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接:"></a>参考链接:</h3><p><a href="http://linpinger.github.io/usr/2018-03-09_slax_930.html" target="_blank" rel="external">调教slax linux</a><br><a href="https://medium.com/@tiat/slax-%E9%9A%A8%E8%BA%AB%E7%A2%9F%E7%B3%BB%E7%B5%B1%E8%AA%BF%E6%A0%A1%E5%82%99%E5%BF%98-537f9af4d5" target="_blank" rel="external">系統調校</a><br><a href="http://lycomputer.blogspot.com/2018/03/slax-linux-93-gcin.html" target="_blank" rel="external">Slax Linux 9.3 的安裝</a><br><a href="https://www.slax.org/customize.php" target="_blank" rel="external">官网使用说明</a><br><a href="https://www.slax.org/modules.php" target="_blank" rel="external">官方商店</a><br><a href="https://pan.baidu.com/s/1Ztux8lV_PoTyxOLbKm5sQg" target="_blank" rel="external">中文版镜像</a>  提取码:uz7n<br>官方的商店提供的软件比较老，毕竟这个系统就作者一个人在维护，建议自己用apt安装然后自己打包。</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 68813175@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2018-2088 lflish
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
